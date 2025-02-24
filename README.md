@@ -15,7 +15,7 @@ launch cs2
 
 
 Known issues:  
-Higher than normal CPU usage when CS2 hasn’t been detected.  
+Higher than normal CPU usage when CS2 hasn’t been detected for the first time.  
 
 
 Credit to [pypresence](https://github.com/qwertyquerty/pypresence) and [csgo-gsi-python](https://github.com/Erlendeikeland/csgo-gsi-python) for the foundation of the project :)
