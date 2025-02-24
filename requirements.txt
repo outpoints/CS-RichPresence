@@ -1,0 +1,2 @@
+psutil==7.0.0
+pypresence==4.3.0
