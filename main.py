@@ -90,7 +90,7 @@ while True:
                 local_player = server.get_info("provider", "steamid")
                 map_map = server.get_info("map", "name")
  
-                print(f'{server.get_info("map", "name")}')
+                #print(f'{server.get_info("map", "name")}')
                 #print(f'{server.get_info("player", "steamid")}')
                 #print(f'{server.get_info("provider", "steamid")}')
                 #print(f'{server.get_info("player", "match_stats", "kills")}')
