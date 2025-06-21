@@ -20,10 +20,12 @@ server.start_server()
 
 maps = ['de_dust2', 'de_ancient', 'de_mirage', 'de_anubis', 'de_inferno', 'de_nuke', 'de_train', #active duty
         'de_overpass', 'de_vertigo', #reserve pool
-        'cs_office', 'cs_italy', #hostage maps
-        'de_basalt', 'de_eden', #reserves group
-        'de_palais', 'de_whistle', #wingman
+        'cs_office', 'cs_italy', 'cs_agency', #hostage maps
+        'de_grail', 'de_jura', #communuity group
+        'de_brewry', 'de_dogtown', #wingman
         'ar_baggage', 'ar_shoots', 'ar_pool_day', #arms race
+
+        'de_palais', 'de_whistle', 'de_basalt', 'de_eden', #inactive maps
         ]
 
 map_names = {#active duty
@@ -42,18 +44,26 @@ map_names = {#active duty
              #hostage maps
              'cs_office': 'Office', 
              'cs_italy': 'Italy',
-             
-             #reserves group
-             'de_basalt': 'Basalt', 
-             'de_eden': 'Eden',
+             'cs_agency': 'Agency',
+
+             #community group
+             'de_grail': 'Grail',
+             'de_jura': 'Jura',
+
              #wingmang
-             'de_palais': 'Palais', 
-             'de_whistle': 'Whistle',
+             'de_brewry': 'Brewery', 
+             'de_dogtown': 'Dogtown',
              
              #arms race
              'ar_baggage': 'Baggage',
              'ar_shoots': 'Shoots',
              'ar_pool_day': 'Pool Day',
+
+             #inactive maps
+             'de_palais': 'Palais', 
+             'de_whistle': 'Whistle',
+             'de_basalt': 'Basalt', 
+             'de_eden': 'Eden',
              }
 
 gamemode_mapping = {'deathmatch': 'Deathmatch',
@@ -80,7 +90,7 @@ while True:
                 local_player = server.get_info("provider", "steamid")
                 map_map = server.get_info("map", "name")
  
-                #print(f'{server.get_info("map", "mode")}')
+                print(f'{server.get_info("map", "name")}')
                 #print(f'{server.get_info("player", "steamid")}')
                 #print(f'{server.get_info("provider", "steamid")}')
                 #print(f'{server.get_info("player", "match_stats", "kills")}')
